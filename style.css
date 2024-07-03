@@ -1,0 +1,61 @@
+:root {
+    background-color: lightgray;
+}
+
+.popup {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+    border: 0.1cm solid black;
+    padding: 50px 30px;
+    border-radius: 0.5cm;
+    font-size: large;
+    background-color: white;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+#header {
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+}
+
+.new {
+    padding: 1.5rem 1rem;
+}
+
+thead {
+    background: lightskyblue;
+}
+
+table {
+    width: 80%;
+    margin: 50px auto; 
+    border-collapse: collapse; 
+    border: 1px solid black;
+    text-align: center;
+}
+
+th, td {
+    min-width: 8rem;
+    padding: 1rem;
+    border: 1px solid black; 
+}
+
+
+.status, .delete {
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.opacity-change {
+    opacity: 0.5;
+}

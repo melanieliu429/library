@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <div style="font-size: 5rem;" >Personal Library</div>
+            <button class="new">NEW BOOK</button>
+        </div>
+    
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Page Count</th>
+                    <th>Finished</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            </tbody>
+        </table>
+    </div>
+    
+    
+    <div class="popup">
+        <form id="form" action="">
+            <div>Title</div>
+            <input type="text" name="title" id="title">
+            <div>Author</div>
+            <input type="text" name="author" id="author">
+            <div>Page Count</div>
+            <input type="number" name="pageCount" id="pageCount">
+            <div>Have you already read this book?</div>
+            <div>
+                <input type="radio" id="yes" name="finished" value="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="finished" value="no">
+                <label for="yes">No</label>
+            </div>
+            <button type="submit" class="submit">Add Book</button>
+        </form>
+    </div>
+</body>
+</html>
