@@ -34,16 +34,16 @@
     <div class="popup">
         <form id="form" action="">
             <div>Title</div>
-            <input type="text" name="title" id="title">
+            <input type="text" name="title" id="title" required>
             <div>Author</div>
-            <input type="text" name="author" id="author">
+            <input type="text" name="author" id="author" required>
             <div>Page Count</div>
-            <input type="number" name="pageCount" id="pageCount">
+            <input type="number" name="pageCount" id="pageCount" required>
             <div>Have you already read this book?</div>
             <div>
-                <input type="radio" id="yes" name="finished" value="yes">
+                <input type="radio" required id="yes" name="finished" value="yes">
                 <label for="yes">Yes</label>
-                <input type="radio" id="no" name="finished" value="no">
+                <input type="radio" required id="no" name="finished" value="no">
                 <label for="yes">No</label>
             </div>
             <button type="submit" class="submit">Add Book</button>
