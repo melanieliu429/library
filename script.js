@@ -17,6 +17,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    // Add some default books to the library
+    myLibrary.push(new Book("J.K. Rowling", "Harry Potter and the Sorcerer's Stone", 309, true));
+    myLibrary.push(new Book("J.R.R. Tolkien", "The Hobbit", 310, false));
+    myLibrary.push(new Book("George Orwell", "1984", 328, true));
+    myLibrary.push(new Book("F. Scott Fitzgerald", "The Great Gatsby", 180, false));
+
     newBookButton.addEventListener("click", () => {
         popup.style.display = "flex";
         main.classList.add("opacity-change");
@@ -35,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         form.reset();
         popup.style.display = "none";
-        main.classList.remove("opacity-change")
+        main.classList.remove("opacity-change");
     });
 
     function addBookToLibrary(book) {
@@ -81,5 +87,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    // Display the initial books when the page loads
     displayBooks();
 });
